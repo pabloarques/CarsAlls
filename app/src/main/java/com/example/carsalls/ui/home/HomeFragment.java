@@ -29,7 +29,6 @@ import com.squareup.picasso.Picasso;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    DatabaseReference databaseReference;
     private FirebaseUser authUser;
     private FirebaseAuth mAuth;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -39,7 +38,7 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        binding.imgAnuncio.setImageResource(R.drawable.kiko);
+
 
         binding.imgbCochesNuevos.setOnClickListener(new View.OnClickListener() {
             @Override

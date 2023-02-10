@@ -56,12 +56,10 @@
         android:contentDescription="@string/BotonesHomeFragment"
         android:minHeight="48dp"
         android:src="@drawable/ic_baseline_directions_car_24"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -77,19 +75,10 @@
         android:text="@string/coches_segunda_mano"
         android:textAlignment="center"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="@+id/imgb_CochesSegundaMano"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="@+id/imgb_CochesSegundaMano"
-        app:layout_constraintTop_toBottomOf="@+id/imgb_CochesSegundaMano"
-        app:layout_constraintVertical_bias="0.4" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.45" />
+        app:layout_constraintTop_toBottomOf="@+id/imgb_CochesSegundaMano" />
 
     <ImageButton
         android:id="@+id/imgb_CochesNuevos"
@@ -97,12 +86,10 @@
         android:layout_height="48dp"
         android:contentDescription="@string/gcm_defaultSenderId"
         android:src="@drawable/ic_baseline_directions_car_24"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toEndOf="@+id/imgb_CochesSegundaMano"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <TextView
         android:id="@+id/txt_coches_nuevos"
@@ -111,41 +98,8 @@
         android:text="@string/cohes_nuevos"
         android:textAlignment="center"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="@+id/imgb_CochesNuevos"
         app:layout_constraintStart_toStartOf="@+id/imgb_CochesNuevos"
-        app:layout_constraintTop_toBottomOf="@+id/imgb_CochesNuevos"
-        app:layout_constraintVertical_bias="0.4" />
-
-    <ImageView
-        android:id="@+id/img_anuncio"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        tools:src="@drawable/kiko" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="537dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:text="@string/anuncio_para_mantener_la_app"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/img_anuncio"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imgb_CochesNuevos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
