@@ -65,7 +65,7 @@ public class DashboardFragment extends Fragment {
         ValenBisiApi valenBisiApi = retrofit.create(ValenBisiApi.class);
         IMapController mapController = binding.map.getController();
         mapController.setZoom(14.5);
-        GeoPoint startPoint = new GeoPoint(39.4715612, -0.3930977);
+        GeoPoint startPoint = new GeoPoint(39.427687, -0.372181);
         mapController.setCenter(startPoint);
 
 
@@ -84,6 +84,12 @@ public class DashboardFragment extends Fragment {
 
         //Concesionarios DATOS ESTATICOS:
 
+       datosMarker();
+
+    }//onViewCreated
+
+    private void datosMarker() {
+
         Marker marker = new Marker(binding.map);
         marker.setPosition(new GeoPoint(39.974464, -0.076447));
         marker.setTextLabelFontSize(40);
@@ -92,7 +98,23 @@ public class DashboardFragment extends Fragment {
         marker.setTitle("AUTOMOVILES V CASTELLÓN");
         binding.map.getOverlays().add(marker);
 
-    }//onViewCreated
+
+        Marker marker2 = new Marker(binding.map);
+        marker2.setPosition(new GeoPoint(39.427687, -0.372181));
+        marker2.setTextLabelFontSize(40);
+        marker2.setIcon(getResources().getDrawable(R.drawable.ic_baseline_car_repair_24));
+        marker2.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_TOP);
+        marker2.setTitle("SUBARU VALENCIA");
+        binding.map.getOverlays().add(marker2);
+
+        Marker marker3 = new Marker(binding.map);
+        marker3.setPosition(new GeoPoint(39.428549, -0.371717));
+        marker3.setTextLabelFontSize(40);
+        marker3.setIcon(getResources().getDrawable(R.drawable.ic_baseline_car_repair_24));
+        marker3.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_TOP);
+        marker3.setTitle("Concesionario Oficial Toyota - Sakurauto S.A.");
+        binding.map.getOverlays().add(marker3);
+    }
 
     @Override
     public void onResume() {
